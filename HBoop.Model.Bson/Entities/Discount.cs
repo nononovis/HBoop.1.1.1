@@ -10,5 +10,6 @@ namespace HBoop.Model.Bson.Entities
         public Decimal Rate { get; set; }
         public DateTime? DateTo { get; set; }
         public DateTime? DateFrom { get; set; }
+
     }
 }
