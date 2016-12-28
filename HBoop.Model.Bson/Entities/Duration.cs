@@ -1,6 +1,6 @@
 ﻿namespace HBoop.Model.Bson.Entities
 {
-    public class Time
+    public class Duration
     {
         public int? Hour { get; set; }
         public int? Minute { get; set; }

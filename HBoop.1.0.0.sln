@@ -46,6 +46,29 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBoop.Mobile", "HBoop.Mobil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBoop.Business.Layer", "HBoop.BusinessLayer\HBoop.Business.Layer.csproj", "{69F4DE38-3AEB-4FD4-8C85-53B077BC7D95}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Themes", "Themes", "{5521E157-4203-47CD-8BDC-0CA74E3D7243}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Hboop.Web.Theme", "Hboop.Web.Theme\", "{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56211"
+		Debug.AspNetCompiler.PhysicalPath = "Hboop.Web.Theme\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56211\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56211"
+		Release.AspNetCompiler.PhysicalPath = "Hboop.Web.Theme\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56211\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56211"
+		SlnRelativePath = "Hboop.Web.Theme\"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -254,6 +277,26 @@ Global
 		{69F4DE38-3AEB-4FD4-8C85-53B077BC7D95}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{69F4DE38-3AEB-4FD4-8C85-53B077BC7D95}.Release|x86.ActiveCfg = Release|Any CPU
 		{69F4DE38-3AEB-4FD4-8C85-53B077BC7D95}.Release|x86.Build.0 = Release|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Debug|ARM.Build.0 = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Debug|x86.Build.0 = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Release|ARM.ActiveCfg = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Release|ARM.Build.0 = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Release|iPhone.ActiveCfg = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Release|iPhone.Build.0 = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Release|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Release|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Release|x86.ActiveCfg = Debug|Any CPU
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Release|x86.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -267,5 +310,7 @@ Global
 		{6D0F804C-53D4-487A-9A05-FEAD43D6B7FB} = {DE1AC9E8-B550-4C9C-BF65-53774D884912}
 		{19BC11D7-EF61-4ABC-863C-5E69C3DC487C} = {DE1AC9E8-B550-4C9C-BF65-53774D884912}
 		{69F4DE38-3AEB-4FD4-8C85-53B077BC7D95} = {3714EB97-59C0-4A7A-B066-4C704A121862}
+		{5521E157-4203-47CD-8BDC-0CA74E3D7243} = {85E935D6-CB75-4C3A-AADB-7B045EE37E93}
+		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF} = {5521E157-4203-47CD-8BDC-0CA74E3D7243}
 	EndGlobalSection
 EndGlobal

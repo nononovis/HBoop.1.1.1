@@ -13,7 +13,7 @@ namespace HBoop.Model.Bson.Entities
         public Media LogoPicture { get; set; }
         public Price Price { get; set; }
         public Discount Discount { get; set; }
-        public Time Time { get; set; }
+        public Duration  Duration { get; set; }
         public int? Status { get; set; }
         public TypeEntity Genre { get; set; }
         public ProductCategory Category { get; set; }

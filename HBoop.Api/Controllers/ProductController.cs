@@ -12,14 +12,11 @@ namespace HBoop.Api.Controllers
     public class ProductController : BaseController
     {
         public ProductController(IBusinessLayer business)
-            : base(business)
-        {
-
-        }
+            : base(business){ }
 
         // GET api/Product
         [HttpGet]
-        public IEnumerable<ProductCategory> GetProductCategory()
+        public IEnumerable<ProductCategory> GetPrdCat()
         {
             var result = this.Business.ProductCategoryRepository.FindAll();
             return result;
@@ -27,7 +24,7 @@ namespace HBoop.Api.Controllers
 
         // GET api/Product
         [HttpGet]
-        public IEnumerable<Product> GetProduct()
+        public IEnumerable<Product> GetPrd()
         {
             var result = this.Business.ProductRepository.FindAll();
             return result;
@@ -35,27 +32,27 @@ namespace HBoop.Api.Controllers
 
         // GET api/Product/5
         [HttpGet("{id}")]
-        public Product GetProduct(string id)
+        public Product GetPrd(string id)
         {
             return this.Business.ProductRepository.Get(id);
         }
 
         // POST api/Product
         [HttpPost]
-        public void Post([FromBody]Product product)
+        public void PostPrd([FromBody]Product product)
         {
             this.Business.ProductRepository.Insert(product);
         }
 
         // PUT api/Product/5
         [HttpPut("{id}")]
-        public void Put(string id, [FromBody]Product product)
+        public void PutPrd(string id, [FromBody]Product product)
         {
         }
 
         // DELETE api/Product/5
         [HttpDelete("{id}")]
-        public void Delete(string id)
+        public void DeletePrd(string id)
         {
             this.Business.ProductRepository.Delete(id);
         }

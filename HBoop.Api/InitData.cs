@@ -32,7 +32,7 @@ namespace HBoop.Api
                                        Name="PRC_BRUSHING" ,
                                        UnitPrice=32.5M
                                      },
-                                      Time=new Time()
+                                      Duration=new Duration()
                                       {
                                             Minute =45
                                       },
@@ -77,7 +77,7 @@ namespace HBoop.Api
                                        Name="PRC_COLORATION" ,
                                        UnitPrice=32.5M
                                      },
-                                      Time=new Time()
+                                      Duration=new Duration()
                                       {
                                             Minute =45
                                       },
@@ -120,7 +120,7 @@ namespace HBoop.Api
                                        Name="PRC_BRUSHING" ,
                                        UnitPrice=32.5M
                                      },
-                                      Time=new Time()
+                                      Duration=new Duration()
                                       {
                                             Minute =45
                                       },
@@ -164,7 +164,7 @@ namespace HBoop.Api
                                        Name="PRC_BALAYAGEALIANZA" ,
                                        UnitPrice=32.5M
                                      },
-                                      Time=new Time()
+                                      Duration=new Duration()
                                       {
                                             Minute =45
                                       },
@@ -208,7 +208,7 @@ namespace HBoop.Api
                                        Name="PRC_COUPEBRUSHING" ,
                                        UnitPrice=32.5M
                                      },
-                                      Time=new Time()
+                                      Duration=new Duration()
                                       {
                                             Minute =90
                                       },
@@ -251,7 +251,7 @@ namespace HBoop.Api
                                        Name="PRC_COUPEBRUSHING" ,
                                        UnitPrice=32.5M
                                      },
-                                      Time=new Time()
+                                      Duration=new Duration()
                                       {
                                             Minute =30
                                       },

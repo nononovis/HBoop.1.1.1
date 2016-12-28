@@ -87,7 +87,7 @@
     <Compile Include="Entities\Role.cs" />
     <Compile Include="Entities\ShipMethod.cs" />
     <Compile Include="Entities\Store.cs" />
-    <Compile Include="Entities\Time.cs" />
+    <Compile Include="Entities\Duration.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\Vat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
