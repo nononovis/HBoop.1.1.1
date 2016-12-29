@@ -133,6 +133,7 @@ hr.small {
     position: fixed;
     top: 0;
     left: 0;
+    margin-top:0;
 }
 
 #sidebar-wrapper.active {
@@ -152,7 +153,7 @@ hr.small {
 
 /* Header */
 
-.header {
+#wrapper .header {
     display: table;
     position: relative;
     width: 100%;
