@@ -69,6 +69,48 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Hboop.Web.Theme", "Hboop.We
 		SlnRelativePath = "Hboop.Web.Theme\"
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Admin-MK", "Hboop.Web.Theme\Admin-MK\", "{93A765E7-9C7D-46ED-851E-C492E8FE56FD}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50484"
+		Debug.AspNetCompiler.PhysicalPath = "Hboop.Web.Theme\Admin-MK\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50484\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50484"
+		Release.AspNetCompiler.PhysicalPath = "Hboop.Web.Theme\Admin-MK\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50484\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50484"
+		SlnRelativePath = "Hboop.Web.Theme\Admin-MK\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Nav-MK", "Hboop.Web.Theme\Nav-MK\", "{05336D94-403C-44DE-BA07-35EC6CA0F2E6}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54061"
+		Debug.AspNetCompiler.PhysicalPath = "Hboop.Web.Theme\Nav-MK\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54061\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54061"
+		Release.AspNetCompiler.PhysicalPath = "Hboop.Web.Theme\Nav-MK\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54061\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "54061"
+		SlnRelativePath = "Hboop.Web.Theme\Nav-MK\"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -297,6 +339,46 @@ Global
 		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Release|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Release|x86.ActiveCfg = Debug|Any CPU
 		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF}.Release|x86.Build.0 = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Debug|ARM.Build.0 = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Debug|x86.Build.0 = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Release|ARM.ActiveCfg = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Release|ARM.Build.0 = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Release|iPhone.ActiveCfg = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Release|iPhone.Build.0 = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Release|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Release|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Release|x86.ActiveCfg = Debug|Any CPU
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD}.Release|x86.Build.0 = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Debug|ARM.Build.0 = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Debug|x86.Build.0 = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Release|ARM.ActiveCfg = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Release|ARM.Build.0 = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Release|iPhone.ActiveCfg = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Release|iPhone.Build.0 = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Release|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Release|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Release|x86.ActiveCfg = Debug|Any CPU
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6}.Release|x86.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -312,5 +394,7 @@ Global
 		{69F4DE38-3AEB-4FD4-8C85-53B077BC7D95} = {3714EB97-59C0-4A7A-B066-4C704A121862}
 		{5521E157-4203-47CD-8BDC-0CA74E3D7243} = {85E935D6-CB75-4C3A-AADB-7B045EE37E93}
 		{7F9CD3C9-E012-42F9-AF71-F40111E4CBFF} = {5521E157-4203-47CD-8BDC-0CA74E3D7243}
+		{93A765E7-9C7D-46ED-851E-C492E8FE56FD} = {5521E157-4203-47CD-8BDC-0CA74E3D7243}
+		{05336D94-403C-44DE-BA07-35EC6CA0F2E6} = {5521E157-4203-47CD-8BDC-0CA74E3D7243}
 	EndGlobalSection
 EndGlobal
