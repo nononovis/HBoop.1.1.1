@@ -1,0 +1,85 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+@section admin{
+    }
+     <div id="pcont" class="container-fluid">
+            <div class="cl-mcont">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="text-right"><i class="fa fa-gear"></i></div>
+                                <h4>Gérer les prestations :</h4>
+                                <hr />
+                                <div class="component">
+
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Tarif (€)</th>
+                                                <th>Remise (%)</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Massage</th>
+                                                <td>20</td>
+                                                <td>3</td>
+                                                <td><a href="#suppression" class="actionmoins popup-with-zoom-anim" title="">-</a><span class="clear"></span> <a href="../../Affiliate/BackEnd/Modifier_produit_service_salon_Gestionnaire" title="" class="actionedit"><i class="fa fa-edit"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Soins</th>
+                                                <td>30</td>
+                                                <td>50</td>
+                                                <td><a href="#suppression" class="actionmoins popup-with-zoom-anim" title="">-</a><span class="clear"></span> <a href="../../Affiliate/BackEnd/Modifier_produit_service_salon_Gestionnaire" title="" class="actionedit"><i class="fa fa-edit"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Coiffure</th>
+                                                <td>60</td>
+                                                <td>10</td>
+                                                <td><a href="#suppression" class="actionmoins popup-with-zoom-anim" title="">-</a><span class="clear"></span> <a href="../../Affiliate/BackEnd/Modifier_produit_service_salon_Gestionnaire" title="" class="actionedit"><i class="fa fa-edit"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Brushing</th>
+                                                <td>10</td>
+                                                <td>-</td>
+                                                <td><a href="#suppression" class="actionmoins popup-with-zoom-anim" title="">-</a><span class="clear"></span> <a href="../../Affiliate/BackEnd/Modifier_produit_service_salon_Gestionnaire" title="" class="actionedit"><i class="fa fa-edit"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Manicure</th>
+                                                <td>12</td>
+                                                <td>-</td>
+                                                <td><a href="#suppression" class="actionmoins popup-with-zoom-anim" title="">-</a><span class="clear"></span> <a href="../../Affiliate/BackEnd/Modifier_produit_service_salon_Gestionnaire" title="" class="actionedit"><i class="fa fa-edit"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Epilation</th>
+                                                <td>50</td>
+                                                <td>1</td>
+                                                <td><a href="#suppression" class="actionmoins popup-with-zoom-anim" title="">-</a><span class="clear"></span> <a href="../../Affiliate/BackEnd/Modifier_produit_service_salon_Gestionnaire" title="" class="actionedit"><i class="fa fa-edit"></i></a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br />
+
+                                    <div class="ajouter text-right">
+                                        <button type="submit" class="btn btn-default" onClick="location.href='../../Affiliate/BackEnd/Ajouter_produit_service_salon_Gestionnaire'">Ajouter des prestations</button>
+                                    </div>
+                                </div>
+
+                                <div id="suppression" class="mfp-hide">
+                                    <div class="priceing-tabel">
+                                        <i class="fa fa-exclamation-circle"></i>
+                                        <h5>voulez vous vraiment supprimer cette ligne ?</h5>
+                                        <a class="price-button" href="" title="">Oui</a> <a class="price-button" title="" href="../../Affiliate/BackEnd/Gerer_produit_service_Gestionnaire">Non</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    

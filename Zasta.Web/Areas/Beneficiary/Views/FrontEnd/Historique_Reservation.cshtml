@@ -1,0 +1,82 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Historique réservation";
+}
+@section footer{}
+@section NavBarClient{}
+@section menu{}
+@section param{}
+<br />
+<br />
+ <div class="row">
+            
+                    <h3>Historique réseravtion des salons : </h3>
+                <br />
+                <div class="col-md-12">
+                    <div class="component panier">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Salon</th>
+                                    <th>Prestation</th>
+                                    <th>Date et heure</th>
+                                    <th>Lieu</th>
+                                    <th>Etat</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Salon Hollywood</th>
+                                    <td>brushing cheveux courts + shampoing + coupe
+                                    </td>
+                                    <td>22/06/2015
+                                        <br />14h30</td>
+                                    <td>Paris</td>
+                                    <td><strong class="expire">Expiré</strong></td>
+                                    <td><a href="../../Beneficiary/FrontEnd/Detail_Reservation" class="actionrech" title=""><i class="fa fa-search"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Salon MO'TIFS</th>
+                                    <td>coloration cheveux courts brushing
+                                    </td>
+                                    <td>10/05/2015
+                                        <br />10h00</td>
+                                    <td>Nice</td>
+                                    <td><strong class="attente">En attente</strong></td>
+                                    <td><a href="../../Beneficiary/FrontEnd/Detail_Reservation" class="actionrech" title=""><i class="fa fa-search"></i></a></td>
+                                </tr>
+                                <tr class="flash">
+                                    <th scope="row">France R</th>
+                                    <td>Teinture cils
+                                    </td>
+                                    <td>03/01/2015
+                                        <br />11h00</td>
+                                    <td>Thionville</td>
+                                    <td>Il reste 2 heures</td>
+                                    <td><a href="../../Beneficiary/FrontEnd/Detail_Reservation" class="actionrech" title=""><i class="fa fa-search"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Marie France</th>
+                                    <td>shampooing coupe brushing
+                                    </td>
+                                    <td>25/11/2014
+                                        <br />09h00</td>
+                                    <td>Toulon</td>
+                                    <td><strong class="expire">Expiré</strong></td>
+                                    <td><a href="../../Beneficiary/FrontEnd/Detail_Reservation" class="actionrech" title=""><i class="fa fa-search"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="suppression" class="mfp-hide">
+                        <div class="priceing-tabel">
+                            <i class="fa fa-exclamation-circle"></i>
+                            <h5>voulez vous vraiment supprimer cette ligne ?</h5>
+                            <a class="price-button" href="" title="oui">Oui</a> <a class="price-button" href="#" title="Non">Non</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br />

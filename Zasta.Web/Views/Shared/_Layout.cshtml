@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../Favicon.png" />
+    <link rel="shortcut icon" href="../../Favicon.png" />
+    <link rel="author" href="../../humans.txt" />
+    <meta name="description" content="Touvez le salon de coiffure le plus proche de vous en quelques clics et faites la résevation en ligne." />
+    <meta name="author" content="Smiri Engineering" />
+    <meta property="og:title" content="Site web Salon de coiffure" />
+    <meta property="og:type" content="Site web" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    @Styles.Render("~/Content/css")
+    @if (!IsSectionDefined("NavBarClient") && !IsSectionDefined("admin"))
+       {
+         @Styles.Render("~/Content/style")
+      }
+    else if (IsSectionDefined("admin"))
+       {
+          @Styles.Render("~/Content/styleAdmin")
+      }
+    else{
+    @Styles.Render("~/Content/styleClient")
+    }
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css' />
+</head>
+@if (!IsSectionDefined("admin"))
+    {
+      <body>
+
+    <noscript>
+        <p class="chromeframe1">JavaScript is disabled. If you have the ability to activate, do, you will gain comfort of use.</p>
+    </noscript> 
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+    <div id="deconnexion" class="mfp-hide">
+            <div class="priceing-tabel">
+                <i class="fa fa-exclamation-circle"></i>
+                <h5>voulez vous vraiment vous déconnecter ?</h5>
+                <a class="price-button" href="../../Home/Login" title="oui">Oui</a> <a class="price-button" href="#" title="Non">Non</a>
+            </div>
+        </div>
+
+   
+        <div id="head-nav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="fa fa-gear"></span></button>
+                    <a href="" class="navbar-brand" data-ajax="false"><img src="../../Images/bano-salons-coiffure-logo.png" alt="" /></a>
+                </div>
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right user-nav" data-ajax="false">
+                        <li>
+                            <br />
+                            <label class="toggler toggler--is-active" id="filt-css"><i class="fa fa-male"></i></label>
+                            <div class="toggle">
+                                <input type="checkbox" id="switcher" class="check" />
+                                <b class="b switch"></b>
+                            </div>
+                            <label class="toggler" id="filt-javascript"><i class="fa fa-female"></i></label>
+
+                        </li>
+
+                         @if (!IsSectionDefined("NavBarClient"))
+                         { 
+                              @Html.Partial("_NavBar", null)
+                         }
+                         else
+                         {
+                              @Html.Partial("_NavBarClient", null)
+                              @RenderSection("NavBarClient", false)
+                         }
+                   
+                    
+                        <li class="dropdown bord end">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" title=""><img src="../../Images/fr.png" alt="" /> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" title=""><img src="../../Images/fr.png" alt="" />&nbsp; FR</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="en" title=""><img src="../../Images/en.png" alt="" />&nbsp; EN</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+                     
+            @if (!IsSectionDefined("menu"))
+               {
+                     <div class="header-map">
+                       
+                         @Html.Partial("_Menu", null)
+
+                        <div class="sky-tabs sky-tabs-pos-left sky-tabs-anim-flip sky-tabs-response-to-icons">
+
+                                <div class="sky-tab-content-4">
+            	                    <label for="sky-tab4" class="ma5-page"> <a class="ma5-toggle-menu" title=""><i class="fa fa-navicon"></i></a></label>
+                                </div>
+                            <div class="info-salon"></div>
+                            @*@Html.Partial("informationsalon", null)*@
+                         </div>
+                        <div id="map"></div>
+                        
+                        @Html.Partial("Recherche", null)
+
+                        <br />
+                        <h1>Trouvez un salon en quelques cliques !</h1>
+                     </div>
+                   }
+            else
+               {
+                  @RenderSection("menu", false)
+                  if (IsSectionDefined("param"))
+                   {
+                     
+                      @RenderSection("param", false)
+                     }
+                   }
+             @if (IsSectionDefined("map"))
+               { 
+                  @RenderSection("map", false)
+                   }
+            <div class="container mobile"></div>
+            <div class="container body-content">
+            @RenderBody()
+            </div>
+    
+        <footer class="text-center">
+      <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-3">
+                        <h3>À PROPOS</h3>
+                        <hr />
+                        <p>Votre texte:
+                            <br />Ideo urbs venerabilis post superbas efferatarum gentium cervices oppressas latasque leges fundamenta libertatis et retinacula sempiterna velut frugi parens et prudens et dives Caesaribus tamquam liberis suis regenda patrimonii iura permisit.</p>
+                    </div>
+                    <div class="footer-col col-md-3">
+                        <h3> <a href="#" class="btn-social btn-outline" title="" data-ajax="false"><i class="fa fa-fw fa-twitter" ></i></a>NOS TWEETS</h3>
+                        <hr />
+                        <p><a href="#" title="">Feed twitter :</a></p>
+                        <div class="twitter">
+                            <ul class="tweets" data-timeout="5" data-tweets="2">
+                                <li><a href="#" target="_blank" title="" data-ajax="false"><strong>Eminuitautem:</strong> Sed quid est quod in hac admirentur et reprehendant meum...</a> </li>
+                                <li><a href="#" title="" data-ajax="false"><strong>Mensarum:</strong> Postremo ad id indignitatis est ventum, ut cum peregrini...</a> </li>
+                                <li><a href="#" title="" data-ajax="false"><strong>Ipsamvero</strong> Iamque non umbratis fallaciis res agebatur, armatis omne circumdedit...</a> </li>
+                                <li><a href="#" title="" data-ajax="false"><strong>Alterasententia:</strong> Quo cognito Constantius ultra mortalem modum exarsit...</a> </li>
+                                <li><a href="#" title="" data-ajax="false"><strong>Hominesenim</strong> Ciliciam vero, quae Cydno amni exultat, Tarsus nobilitat condidisse Perseus...</a> </li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <div class="footer-col col-md-3">
+                        <h3>NOS CATÉGORIES</h3>
+                        <hr />
+                        <ul>
+                            <li>
+                                Coiffure
+                            </li>
+
+                            <li>
+                                Soins de beauté
+                            </li>
+                            <li>
+                                Massage
+                            </li>
+                            <li>
+                                Catégorie 4
+                            </li>
+                            <li class="fin">
+                                Catégorie 5
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="footer-col col-md-3">
+                        <h3>FACEBOOK</h3>
+                        <hr />
+                        <p>Suivez nous sur notre page</p>
+                        <br />
+                        <a href="#" class="btn btn-primary"  data-ajax="false" title="">
+                            <i class="fa fa-facebook"></i> SUIVEZ-NOUS
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                 @if (!IsSectionDefined("footer"))
+                 { 
+                @Html.Partial("_footer", null)
+                 }
+                 else
+                 {
+                 @Html.Partial("_footerClient", null)
+                     @RenderSection("footer", false)
+                 }
+                <div class="col-md-4 text-center">
+                    <a href="http://www.smiriengineering.com/" title="smiri engineering" target="_blank" data-ajax="false">Powered by <img src="../../Images/logoseb.png" alt="Smiri Engineering" width="50"></a>
+                </div>
+
+
+                <div class="col-md-4 end">
+                    Copyright &copy; Salon de coiffure
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    
+    @if (IsSectionDefined("map"))
+     {
+        @Scripts.Render("~/bundles/Ux/Detailmap")
+       }
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+  
+    @RenderSection("scripts", false)
+    @if (!IsSectionDefined("map") && !IsSectionDefined("param"))
+       { 
+           @Scripts.Render("~/bundles/Ux/map")
+         }
+     @if (IsSectionDefined("monParam"))
+       { 
+           @Scripts.Render("~/bundles/parametre")
+           @RenderSection("monParam", false)
+         }
+    @if (!IsSectionDefined("param"))
+       { 
+           @Scripts.Render("~/bundles/Init")
+         }
+    @Scripts.Render("~/bundles/Ux")
+    @if (!IsSectionDefined("param"))
+       { 
+           @Scripts.Render("~/bundles/Info")
+         }
+</body>
+    }
+    else
+    {
+      <body>
+    <noscript>
+        <p class="chromeframe1">JavaScript is disabled. If you have the ability to activate, do, you will gain comfort of use.</p>
+    </noscript> 
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+    <div id="deconnexion" class="mfp-hide">
+            <div class="priceing-tabel">
+                <i class="fa fa-exclamation-circle"></i>
+                <h5>voulez vous vraiment vous déconnecter ?</h5>
+                <a class="price-button" href="../../Home/Login" title="oui">Oui</a> <a class="price-button" href="#" title="Non">Non</a>
+            </div>
+        </div>
+        @Html.Partial("_NavBarAdmin", null)
+        <div id="cl-wrapper" class="fixed-menu sb-collapsed">
+        @Html.Partial("_MenuAdmin", null)
+        @RenderBody()
+         </div>
+        @Html.Partial("_footerAdmin", null)
+        @RenderSection("admin", false)
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/Admin")
+      @if (IsSectionDefined("conf"))
+       { 
+           @Scripts.Render("~/bundles/AdminConfirme")
+           @RenderSection("conf", false)
+         }
+        </body>
+    }
+</html>

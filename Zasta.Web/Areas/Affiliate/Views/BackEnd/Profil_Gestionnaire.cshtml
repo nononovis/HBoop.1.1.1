@@ -1,0 +1,57 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+@section admin{}
+@section conf{}
+    <div id="pcont" class="container-fluid">
+            <div class="cl-mcont">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="text-right"><i class="fa fa-plus-square"></i></div>
+                                <h4>Changer votre Profil :</h4>
+                                <hr />
+                                <form  id="wave-form" data-parsley-validate>
+                                    <div class="form-group">
+                                        @Html.Label("Nom")
+                                        <input type="text" class="form-control" id="nom" required>
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.Label("Vignette")
+                                        <input id="uploadFile" disabled="disabled" class="form-control" required/>
+                                        <div class="fileUpload btn btn-upload">
+                                            <span>Choisissez un fichier</span>
+                                            <input id="uploadBtn" type="file" class="upload" multiple="multiple" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.Label("E-mail")
+                                        <input type="email" class="form-control" id="email" required parsley-type="email">
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        @Html.Label("Mot de passe:")
+                                        <input type="password" class="form-control" id="mdp" required>
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.Label("Confirmer mot de passe:")
+                                        <input type="password" class="form-control" id="mdpEquals" required>
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.Label("Adresse")
+                                        <input type="number" class="form-control" id="ville" required>
+                                    </div>
+                                    <div class="ajouter text-right">
+                                        <button type="submit" class="btn btn-default text-right">Ajouter</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    

@@ -1,0 +1,59 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section footer{
+    }
+@section NavBarClient{
+    }
+@section menu{
+    }
+@section param{}
+@section monParam{}
+<br />
+<div class="row">
+
+                <div class="col-md-12">
+                    <br />
+                    <h3>Paramètres: </h3>
+                    <br />
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h4>Modifier mes paramètres:</h4>
+                            <hr>
+                            <form id="parametre" action="" data-parsley-validate>
+                                <div class="form-group">
+                                    @Html.Label("Nom :")
+                                    <input type="text" class="form-control" id="nom" required value="lorem ipsum">
+                                </div>
+                                <div class="form-group">
+                                    @Html.Label("Adresse E-mail :")
+                                    <input type="email" class="form-control" id="email" required parsley-type="email" value="lorem.ipsum@gmail.com">
+                                </div>
+                                <div class="form-group">
+                                    @Html.Label("Mot de passe :")
+                                    <input type="password" class="form-control" id="email" required value="123456M">
+                                </div>
+                                <div class="form-group">
+                                    @Html.Label("Vignette")
+                                    <input id="uploadFile" disabled="disabled" class="form-control" required />
+                                    <div class="fileUpload btn btn-upload">
+                                        <span>Choisissez une image</span>
+                                        <input id="uploadBtn" type="file" class="upload" multiple />
+                                    </div>
+                                </div>
+
+                                <div class="ajouter text-right">
+                                    <button type="submit" class="btn btn-default text-right ajout">Modifier</button>
+                                    <br />
+
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+<br />
+

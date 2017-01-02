@@ -1,0 +1,59 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Contact";
+}
+
+  <div class="row">
+            <div class="col-md-12">
+                <h3>Contactez-nous </h3>
+                <br />
+
+               		<form action="#" id="wave-form" class="wave-form" data-parsley-validate>
+                                <fieldset>
+                                    <div class="row">
+                                        <section>
+                                            @Html.Label("Nom")
+                                            <label class="input">
+                                                <i class="icon-append fa fa-user"></i>
+                                                <input type="text" name="nom" id="nom" required />
+                                            </label>
+                                        </section>
+                                    </div>
+
+                                    <div class="row">
+                                        <section>
+                                            @Html.Label("E-mail")
+                                            <label class="input">
+                                                <i class="icon-append fa fa-envelope-o"></i>
+                                                <input type="email" name="email" id="email" required data-parsley-type="email" />
+                                            </label>
+
+                                        </section>
+                                        <section>
+                                              <input type="text" id="SecondName" name="SecondName" class="champNom2" placeholder="Second Nom" autocomplete="off">
+                                        </section>
+                                    </div>
+                                    <div class="row">
+                                        <section>
+                                            @Html.Label("Message")
+                                            <label class="textarea">
+                                                <i class="icon-append fa fa-comment"></i>
+                                                <textarea rows="4" name="message" id="message" required /></textarea>
+                                            </label>
+                                        </section>
+                                    </div>
+                                </fieldset>
+                                <footer>
+                                    <button type="submit" class="button">Envoyer</button>
+
+                                </footer>
+                            </form>
+                            <div class="alertMessage"><i class="fa fa-check"></i> Votre message a été envoyé, Merci.</div>
+                            <div class="erreur"><i class="fa fa-close"></i> Échec d'envoi du message. Réessayez plus tard.</div>
+            </div>
+        </div>
+
+@section scripts{
+    <script type='text/javascript' src="http://maps.googleapis.com/maps/api/js"></script>
+    <script type='text/javascript' src="~/Scripts/Ux/animationBody.js"></script>
+    }

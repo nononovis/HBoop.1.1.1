@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../Favicon.png" />
+    <link rel="shortcut icon" href="../../Favicon.png" />
+    <link rel="author" href=".././humans.txt" />
+    <meta name="author" content="SMIRI Engineering" />
+    <title>Login Salon de coiffure</title>
+    
+    <link rel="stylesheet" href="@Url.Content("../../Areas/Affiliate/Styles/bootstrap.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("../../Areas/Affiliate/Styles/styles.css")" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css' />
+
+</head>
+
+<body> 
+    <!--[if IE 8]><p class=chromeframe>Votre navigateur est <em>ancien!</em> <a href="http://browsehappy.com/">Mise à niveau vers un autre navigateur</a> or <a href="http://www.google.com/chromeframe/?redirect=true">installer Google Chrome Frame</a> pour exécuter ce site.</p><![endif]-->
+<noscript>
+    <p class="chromeframe1">JavaScript is disabled. If you have the ability to activate, do, you will gain comfort of use.</p>
+</noscript> 
+
+    <!--nav-->
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center animated fadeInUp">
+                <br />
+                <br />
+                <a href="../../Home/Login" title="" class="logo"><img src="@Url.Content("../../Areas/Affiliate/Images/Bano-Logo.jpg")" alt="" /></a>
+
+                <div class="authentification">
+                    <div class="connexion">
+                        <br />
+                        <h3>Se connecter en tant que : </h3>
+                        <br />
+                        <a class="btn btn-default client" href="../../Beneficiary/FrontEnd/LoginClient">Client</a>
+                        <br />
+                        <br />
+                        <a class="btn btn-default gestionnaire" href="../../Affiliate/BackEnd/LoginGestionnaire">Gestionnaire de salon</a>
+                    </div>
+                        <br />
+                        <a href="../../Home/index" title="" class="text-center">Retour au site</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="@Url.Content("../../Scripts/Lib/jquery-1.11.0.js")" type="text/javascript"></script>
+    <script src="@Url.Content("../../Content/bootstrap.min.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        /* preloader */
+        jQuery(window).load(function () { // makes sure the whole site is loaded
+            jQuery("#status").fadeOut(); // will first fade out the loading animation
+            jQuery("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
+        })
+
+	</script>
+</body>
+
+</html>

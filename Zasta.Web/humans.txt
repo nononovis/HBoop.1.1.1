@@ -1,0 +1,44 @@
+/* TEAM */
+	SED Web Designer Director : Mlle. Nouha SMIRI
+	Email: s.nouha@smiri.com.tn
+	Web: Sedesign.smiri.com.tn
+	From: Tunis, Tunisia
+
+	PRAXIS Front-End Director: Mlle. Mariem TEBAI
+	Email: t.mariem@smiri.com.tn
+	Web: praxis.smiri.com.tn
+	From: Tunis, Tunisia
+
+	PRAXIS Developper Director: Mr. Ahmed Hammemi
+	Email: developer.SE@smiri.com.tn  
+	Web: praxis.smiri.com.tn
+	From: Tunis, Tunisia
+
+	SE Business Developpment Manager: Mlle. Mariem Jemail
+	Email:  commercial@smiri.com.tn  
+	Web: www.smiri.com.tn
+	From: Tunis, Tunisia
+
+	SE Office Manager: Mlle. Hela Hizaoui
+	Email: h.hela@smiri.com.tn
+	Web: www.smiri.com.tn
+	From: Tunis, Tunisia
+
+/* THANKS */
+	SMIRI ENGINEERING Associate Executive Director: Mme. Souhir SMIRI
+	SMIRI ENGINEERING Associate Owner: Mr. Wissem SMIRI
+	Création site web dynamique et statique, logo entreprise, idendité visuelle, Software sur mesure, hébérgement, etude, audit et conseils
+	Email: contact@smiri.com.tn
+	Tel: +216 70 690 776
+	Fax: +216 70 690 775
+	Mobile1: +216 99 712 900
+	Mobile2: +216 29 219 900
+	Web: www.smiri.com.tn
+	Web: www.smiriengineering.com
+	From: Tunis, Tunisia
+                            
+                                          
+/* SITE */     
+Last update: 06/08/2015  
+Standards: HTML5, CSS3
+Components: Modernizr, jQuery,C#,SQL

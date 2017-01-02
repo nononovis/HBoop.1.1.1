@@ -1,0 +1,53 @@
+﻿@{
+    Layout = null;
+}
+
+
+<div class="bgheader salonSearch">
+                                <div class="container header" id="search">
+                                    <form id="search-filter-form" method="post" class="search-form" action="#">
+                                        <div class="input">
+                                            <input type="search" class="textinput" placeholder="Recherche..." value="" name="s" title="Search for:" />
+                                            <input type="hidden" name="search_post_type" value="place" />
+                                            <i class="fa fa-search"></i>
+                                        </div>
+                                        <div class="input dropdown">
+                                            <select id="google-map-location-filter" name="location" class="filter-dropdown custom-dropdown" aria-invalid="false">
+                                                <option value="" selected>Toutes les villes</option>
+                                                <option value="Paris">Paris</option>
+                                                <option value="Marseille">Marseille</option>
+                                                <option value="Lyon">Lyon</option>
+                                                <option value="Toulouse">Toulouse</option>
+                                                <option value="Nice">Nice</option>
+                                                <option value="Nantes">Nantes</option>
+                                                <option value="Strasbourg">Strasbourg</option>
+                                            </select>
+                                        </div>
+                                        <div class="input dropdown">
+                                            <select id="google-map-category-filter" name="category" class="filter-dropdown custom-dropdown" aria-invalid="false">
+                                                <option value="" selected>Toutes les catégories</option>
+                                                <option value="Coiffure">Coiffure</option>
+                                                <option value="Soins de beauté">Soins de beauté</option>
+                                                <option value="Massage">Massage</option>
+                                                <option value="Brushing">Brushing</option>
+                                            </select>
+                                        </div>
+                                        <div class="bara">
+                                            <div class="slider" id="BudgetSlider"></div>
+                                        </div>
+					                    <div class="range">
+                                                <h5 class="range">Rayon de recherche (Km):</h5>
+                                                <br>
+                                                <input type="range" min="0" max="1000" step="10" value="300" data-rangeslider />
+                                                <br /><br />
+                                                <output id="js-output"></output>
+                                        </div>
+                                        <div class="search">
+                                            <input type="submit" id="searchsubmit" class="button solid main-bg-color" value="Chercher" />
+                                        </div>
+                                    </form>
+                                </div>
+
+        	                    <button class="btn btn-default ajout searchHidden"><i class="fa fa-plus"></i></button>
+
+                            </div>

@@ -1,0 +1,77 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section footer{}
+@section NavBarClient{}
+@section menu{}
+@section param{}
+<div class="row">
+
+                <div class="col-md-12">
+                    <h3>Mon panier : </h3>
+                    <br />
+                    <div id="bc1" class="btn-group btn-breadcrumb">
+                        <a href="#" class="btn btn-default active" title="panier">
+                            <div>Mon Panier</div>
+                        </a>
+                        <a href="#" class="btn btn-default disable" title="Paiement">
+                            <div>Paiement</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+<div class="row">
+                <br />
+                <div class="col-md-12">
+                    <div class="component panier">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Salon</th>
+                                    <th>Prestation</th>
+                                    <th>Date et heure</th>
+                                    <th>Total</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Salon Hollywood</th>
+                                    <td>brushing cheveux courts shampoing+coupe+brushing
+                                    </td>
+                                    <td>22/06/2015
+                                        <br />14h30</td>
+                                    <td>Total : 21€
+                                        <br /> Acompte (0%) : 0€</td>
+                                    <td><a href="#suppression" class="actionmoins popup-with-zoom-anim" title="">-</a><span class="clear"></span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Salon MO'TIFS</th>
+                                    <td>coloration cheveux courts coloration
+                                    </td>
+                                    <td>10/05/2015
+                                        <br />10h00</td>
+                                    <td>Total : 50€
+                                        <br /> Acompte (10%) : 10€</td>
+                                    <td><a href="#suppression" class="actionmoins popup-with-zoom-anim" title="">-</a><span class="clear"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="detail">
+                        <p class=" text-right"><strong>Total :</strong> 71 €
+                            <br />
+                            <br /> <a href="../../Beneficiary/FrontEnd/Paiement" class="btn btn-default ajout" title="">Suivant</a></p>
+                    </div>
+                    <div id="suppression" class="mfp-hide">
+                        <div class="priceing-tabel">
+                            <i class="fa fa-exclamation-circle"></i>
+                            <h5>voulez vous vraiment supprimer cette ligne ?</h5>
+                            <a class="price-button" href="" title="oui">Oui</a> <a class="price-button" href="#" title="Non">Non</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+

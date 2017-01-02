@@ -1,0 +1,159 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section footer{}
+@section NavBarClient{}
+@section menu{}
+@section param{}
+<br />
+<br />
+<div class="row">
+
+                    <div class="col-md-12">
+                        <h3>Paiement : </h3>
+                        <br />
+                        <div id="bc1" class="btn-group btn-breadcrumb">
+                            <a href="Panier" class="btn btn-default active" title="">
+                                <div>Mon Panier</div>
+                            </a>
+                            <a href="#" class="btn btn-default active" title="">
+                                <div>Paiement</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+<div class="row">
+    <br />
+                    <div class="col-md-8">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h2>Merci de choisir votre mode de paiement :</h2>
+                                <hr>
+                                <div id="paiement" class="accordion-container">
+                                    <div>
+                                        <h3> <span><img src="@Url.Content("~/Areas/Beneficiary/Images/cb.png")" alt="carte bancaire" width="100"/> Carte bancaire <a href="#" class="plus" title="">&#x2b;</a> <a href="#" class="minus" title="">&#x2212;</a> </span> </h3>
+                                        <div class="mode">
+                                            <form id="carte-bancaire" data-parsley-validate>
+                                                <div class="form-group">
+                                                    @Html.Label("Je choisis ma carte :")
+                                                    <select class="form-control">
+                                                        <option>Carte Bancaire</option>
+                                                        <option>American Express</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    @Html.Label("Titulaire de la carte :")
+                                                    <input type="text" class="form-control" id="titulaire-carte" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    @Html.Label("Numéro de la carte :")
+                                                    <input type="number" class="form-control" id="num-carte" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    @Html.Label("Date d'expiration :")
+
+                                                    <select class="form-control">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                        <option>6</option>
+                                                        <option>7</option>
+                                                        <option>8</option>
+                                                        <option>9</option>
+                                                        <option>10</option>
+                                                        <option>11</option>
+                                                        <option>12</option>
+                                                        <option>13</option>
+                                                        <option>14</option>
+                                                        <option>15</option>
+                                                        <option>16</option>
+                                                        <option>17</option>
+                                                        <option>18</option>
+                                                        <option>19</option>
+                                                        <option>20</option>
+                                                        <option>21</option>
+                                                        <option>22</option>
+                                                        <option>23</option>
+                                                        <option>24</option>
+                                                        <option>25</option>
+                                                        <option>26</option>
+                                                        <option>27</option>
+                                                        <option>28</option>
+                                                        <option>29</option>
+                                                        <option>30</option>
+                                                        <option>31</option>
+                                                    </select>
+                                                    <select class="form-control">
+                                                        <option value="01">Janvier</option>
+                                                        <option value="02">Février</option>
+                                                        <option value="03">Mars</option>
+                                                        <option value="04">Avril</option>
+                                                        <option value="05">Mai</option>
+                                                        <option value="06">Juin</option>
+                                                        <option value="07">Juillet</option>
+                                                        <option value="08">Aout</option>
+                                                        <option value="09">Septembre</option>
+                                                        <option value="10">Octobre</option>
+                                                        <option value="11">Novembre</option>
+                                                        <option value="12">Décembre</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    @Html.Label("Code de vérification de la carte :")
+                                                    <input type="text" class="form-control" id="code-verif" required>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> Mémoriser cette carte pour un prochain achat :
+                                                    </label>
+                                                </div>
+                                                <div class="ajouter text-right">
+                                                    <button type="submit" class="btn btn-default text-right ajout">Valider mon paiement et ma commande</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3> <span><img src="@Url.Content("~/Areas/Beneficiary/Images/paypallogo.png")" alt="paypal" width="100"/> <a href="#" class="plus" title="">&#x2b;</a> <a href="#" class="minus" title="">&#x2212;</a> </span> </h3>
+                                        <div class="mode">
+                                            <p>En choississant ce mode de paiement, vous allez être re-dirigé vers le serveur sécurisé de Paypal et accéder à votre compte Paypal. Votre commande sera enregistrée lorsque vous aurez validé votre paiement sur le site Paypal.</p>
+                                            <div class="ajouter text-right">
+                                                <button type="submit" class="btn btn-default text-right ajout">Effectuer mon paiement sur paypal</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3> <span>Cartes cadeaux <a href="#" class="plus" title="">&#x2b;</a> <a href="#" class="minus" title="">&#x2212;</a> </span> </h3>
+                                        <div class="mode">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui recusandae nam voluptatum illo quasi deserunt nostrum perferendis minima obcaecati consequatur officiis earum non beatae quas odit aspernatur in libero dolorum?</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nihil excepturi omnis veritatis atque est numquam? Quidem fugit neque in commodi eaque. Velit deleniti voluptatem consequuntur illo quod quis quae?</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam obcaecati iste beatae fugit dicta necessitatibus ex in impedit quidem perspiciatis corporis omnis doloribus aliquid iusto non quo voluptates adipisci ea.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus assumenda explicabo vel itaque beatae eaque at commodi facere esse fugiat eum molestias harum a iure nam ducimus odio porro cum.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quia sit eius ratione eaque est accusamus earum aperiam ullam assumenda sint ducimus in dolor cumque delectus modi mollitia magnam. Ex!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of first -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h2>  Ma Réservaion </h2>
+                                <hr>
+                                <div class="detail-reservation">
+                                    <strong>Total :</strong> 71 €
+                                    <br />
+                                    <strong>Réduction :</strong> 0 €
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+<br />

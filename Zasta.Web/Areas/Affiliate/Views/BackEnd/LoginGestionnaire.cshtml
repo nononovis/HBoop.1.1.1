@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../Favicon.png" />
+    <link rel="shortcut icon" href="../../Favicon.png" />
+    <link rel="author" href="../../humans.txt" />
+    <meta name="author" content="SMIRI Engineering" />
+    <title>Login pour gestionnaire de salon</title>
+    
+    <link rel="stylesheet" href="@Url.Content("~/Areas/Affiliate/Styles/bootstrap.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Areas/Affiliate/Styles/styles.css")" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css' />
+
+</head>
+
+<body>
+    <!--[if IE 8]><p class=chromeframe>Votre navigateur est <em>ancien!</em> <a href="http://browsehappy.com/">Mise à niveau vers un autre navigateur</a> or <a href="http://www.google.com/chromeframe/?redirect=true">installer Google Chrome Frame</a> pour exécuter ce site.</p><![endif]-->
+<noscript>
+    <p class="chromeframe1">JavaScript is disabled. If you have the ability to activate, do, you will gain comfort of use.</p>
+</noscript> 
+
+    <!--nav-->
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center animated fadeInUp">
+                <br />
+                <br />
+                <a href="../../Home/Login" title="" class="logo"><img src="@Url.Content("~/Areas/Affiliate/Images/Bano-Logo.jpg")" alt="" /></a>
+
+                <div class="authentification">
+
+                    <div class="connexion">
+                        <br />
+                        <br />
+                        <form action="../../Affiliate/BackEnd/Accueil_Gestionnaire">
+
+                            <center>
+                                <div class="form-group">
+                                    @Html.Label("Adresse E-mail :")
+                                    <br />
+                                    <input type="email" class="form-control" id="login" required="required">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    @Html.Label("Mot de passe :")
+                                    <br />
+                                    <input type="password" class="form-control" id="mp" required="required" parsley-type="email">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+
+                                <div class="switch">
+                                    <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                                    <label for="cmn-toggle-1"></label>
+
+                                    <em>Se souvenir de moi</em>
+                                </div>
+
+                                <div class="clearfix"></div>
+                                <button class="btn btn-default cnx" type="submit">Connexion</button>
+
+
+                            </center>
+                        </form>
+                    </div>
+                    <a href="../../Home/Inscription" title="" class="text-left">S'inscrire</a>
+                    <a href="../../Home/Mot_de_passe_oublie" title="" class="text-right">Mot de passe oublié ?</a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="@Url.Content("~/Scripts/Lib/jquery-1.11.0.js")"></script>
+    <script src="@Url.Content("~/Areas/Affiliate/Scripts/Ux/bootstrap.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Areas/Affiliate/Scripts/Ux/parsley.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Areas/Affiliate/Scripts/Ux/dateiso.js")"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //initialize the javascript
+            $('form').parsley();
+        });
+    </script>
+
+    <script type="text/javascript">
+		/* preloader */
+		jQuery(window).load(function() { // makes sure the whole site is loaded
+			jQuery("#status").fadeOut(); // will first fade out the loading animation
+			jQuery("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
+		})
+	</script>
+</body>
+
+</html>

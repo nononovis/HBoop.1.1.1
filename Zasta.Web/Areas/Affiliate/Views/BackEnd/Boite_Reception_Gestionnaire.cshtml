@@ -1,0 +1,100 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+@section admin{
+    }
+<div class="page-aside email">
+            <div class="fixed nano nscroller">
+                <div class="content">
+                    <div class="header">
+                        <button data-target=".mail-nav" data-toggle="collapse" type="button" class="navbar-toggle"><i class="fa fa-chevron-down"></i></button>
+                        <h2 class="page-title">Service Messages </h2>
+                        <p class="description">Messages Clients</p>
+                    </div>
+                    <div class="mail-nav collapse">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li class="active"><a href="#" title=""><span class="label label-primary pull-right">6</span><i class="fa fa-inbox"></i> Boite de réception</a></li>
+                            <li><a href="#" title=""><i class="fa fa-envelope"></i> Message envoyés</a></li>
+                            <li><a href="#" title=""><i class="fa fa-suitcase"></i> Important</a></li>
+                            <li><a href="#" title=""><span class="label label-default pull-right">3</span><i class="fa fa-file-o"></i> Brouillons</a></li>
+                            <li><a href="#" title=""><i class="fa fa-star-o"></i> Cercles</a></li>
+                            <li><a href="#" title=""><i class="fa fa-trash-o"></i> Corbeille</a></li>
+                        </ul>
+
+                        <div class="compose"><a class="btn btn-flat btn-primary" title="">Composer un E-mail</a></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+<div id="pcont" class="container-fluid">
+            <div class="mail-inbox">
+                <div class="head">
+                    <h3>Boite de réception <span>(13 nouveaux)</span></h3>
+                    <input type="text" placeholder="Recherche mail..." class="form-control">
+                </div>
+                <div class="filters">
+                    <input id="check-all" type="checkbox" name="checkall"><span>Select Tous</span>
+                    <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-sm btn-flat btn-default"><i class="fa fa-angle-left"></i></button>
+                        <button type="button" class="btn btn-sm btn-flat btn-default"><i class="fa fa-angle-right"></i></button>
+                    </div>
+                    <div class="btn-group pull-right">
+                        <button data-toggle="dropdown" type="button" class="btn btn-sm btn-flat btn-default dropdown-toggle">Trier par <i class="fa fa-caret"></i></button>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a href="#" title="">Date</a></li>
+                            <li><a href="#" title="">Sujet</a></li>
+                            <li class="end"><a href="#" title="">Taille</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mails">
+                    <div class="item">
+                        <div>
+                            <input type="checkbox" name="c[]">
+                        </div>
+                        <div><span class="date pull-right"><i class="fa fa-paperclip"></i> 20 Nov</span>
+                            <h4 class="from">Lorem Ipsum</h4>
+                            <p class="msg">Nisi mihi Phaedrum, inquam, tu mentitum aut Zenonem putas, quorum !</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <input type="checkbox" name="c[]">
+                        </div>
+                        <div><span class="date pull-right"><i class="fa fa-paperclip"></i> 20 Nov</span>
+                            <h4 class="from">Cum haec</h4>
+                            <p class="msg">taliaque sollicitas eius aures everberarent expositas semper eius modi rumoribus et patentes!</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <input type="checkbox" name="c[]">
+                        </div>
+                        <div><span class="date pull-right"><i class="fa fa-paperclip"></i> 20 Nov</span>
+                            <h4 class="from">Horum adventum</h4>
+                            <p class="msg">praedocti speculationibus fidis rectores militum tessera !</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <input type="checkbox" name="c[]">
+                        </div>
+                        <div><span class="date pull-right"><i class="fa fa-paperclip"></i> 20 Nov</span>
+                            <h4 class="from">Vrsicinum primum </h4>
+                            <p class="msg">ad se venire summo cum honore mandavit!</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <input type="checkbox" name="c[]">
+                        </div>
+                        <div><span class="date pull-right"><i class="fa fa-paperclip"></i> 20 Nov</span>
+                            <h4 class="from">Calycadni fluminis</h4>
+                            <p class="msg">cuius undarum magnitudo murorum adluit turres, in speciem locavere pugnandi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+

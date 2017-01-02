@@ -1,0 +1,149 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+@section admin{
+    }
+    <div id="pcont" class="container-fluid">
+            <div class="cl-mcont">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="text-right"><i class="fa fa-pencil-square-o"></i></div>
+                                <h4>Ajouter un salon :</h4>
+                                <hr />
+                                <form  id="wave-form" data-parsley-validate>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            @Html.Label("Nom")
+                                            <input type="text" class="form-control" id="nom" required="required">
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.Label("Tél.")
+                                            <input type="text" class="form-control" id="tel" required="required" parsley-type="phone">
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.Label("E-mail")
+                                            <input type="email" class="form-control" id="email" required="required" parsley-type="email">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <div class="form-group">
+                                            @Html.Label("Adresse")
+                                            <input type="text" class="form-control" id="adresse" required="required">
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.Label("Ville")
+                                            <input type="password" class="form-control" id="ville" required="required">
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.Label("Range des prix")
+                                            <input type="text" class="form-control" id="prix" required="required">
+                                        </div>
+                                        <div class="ajouter text-right">
+                                            <button type="submit" class="btn btn-default text-right">Ajouter</button>
+                                        </div>
+
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="text-right"><i class="fa fa-calendar"></i></div>
+                                <h4>Horaire de travail :</h4>
+                                <hr />
+                                <p>Cliquez sur les cases pour modifier l'heure:</p>
+                                <div class="component">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Jour</th>
+                                                <th>De</th>
+                                                <th>À</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Lundi</th>
+                                                <td contentEditable>
+                                                    <input type="time" name="wakeup" class="time">
+                                                </td>
+                                                <td contentEditable>
+                                                    <input type="time" name="wakeup" class="time">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Mardi</th>
+                                                <td contentEditable>
+                                                    <input type="time" name="wakeup" class="time">
+                                                </td>
+                                                <td contentEditable>
+                                                    <input type="time" name="wakeup" class="time">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Mercredi</th>
+                                                <td contentEditable>
+                                                    <input type="time" name="wakeup" class="time">
+                                                </td>
+                                                <td contentEditable>
+                                                    <input type="time" name="wakeup" class="time">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Jeudi</th>
+                                                <td contentEditable>
+                                                    <input type="time" name="wakeup" class="time">
+                                                </td>
+                                                <td contentEditable>
+                                                    <input type="time" name="wakeup" class="time">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Vendredi</th>
+                                                <td contentEditable>
+                                                    <input type="time" name="wakeup" class="time">
+                                                </td>
+                                                <td contentEditable>
+                                                    <input type="time" name="wakeup" class="time">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Samedi</th>
+                                                <td contentEditable>
+                                                    <input type="time" name="wakeup" class="time">
+                                                </td>
+                                                <td contentEditable>
+                                                    <input type="time" name="wakeup" class="time">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Dimanche</th>
+                                                <td contentEditable>
+                                                    <input type="time" name="wakeup" class="time">
+                                                </td>
+                                                <td contentEditable>
+                                                    <input type="time" name="wakeup" class="time">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br />
+                                    <div class="ajouter text-right">
+                                        <button type="submit" class="btn btn-default">Enregistrer</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    

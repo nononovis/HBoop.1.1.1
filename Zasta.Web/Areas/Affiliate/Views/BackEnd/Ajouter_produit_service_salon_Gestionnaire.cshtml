@@ -1,0 +1,39 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+@section admin{
+    }
+     <div id="pcont" class="container-fluid">
+            <div class="cl-mcont">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="text-right"><i class="fa fa-plus-square"></i></div>
+                                <h4>Ajouter prestations :</h4>
+                                <hr />
+                                <form  id="wave-form" data-parsley-validate>
+                                    <div class="form-group">
+                                        @Html.Label("Nom prestation")
+                                        <input type="text" class="form-control" id="nom" required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.Label("NTarif (€)")
+                                        <input type="number" class="form-control" id="tarif" required="required" parsley-type="number">
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.Label("Remise (%)")
+                                        <input type="number" class="form-control" id="remise" required="required" parsley-type="number">
+                                    </div>
+                                    <div class="ajouter text-right">
+                                        <button type="submit" class="btn btn-default text-right">Ajouter</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   

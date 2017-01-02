@@ -1,0 +1,1 @@
+﻿$(document).ready(function () { $('#wave-form').parsley(); $("#BudgetSlider").rangeSlider({ bounds: { min: 10, max: 10000 }, step: 1, defaultValues: { min: 300, max: 6000 } }); });

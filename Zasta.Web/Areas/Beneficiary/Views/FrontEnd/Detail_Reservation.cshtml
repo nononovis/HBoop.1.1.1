@@ -1,0 +1,102 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Détail réservation";
+}
+
+@section map{
+<div class="header-map detail-reservation">
+    <div id="map"></div>
+        <br />
+        <h1>Trouvez un salon en quelques cliques !</h1>
+    </div>
+    }
+ <div class="row">
+            <div class="col-md-12">
+
+                <h3>Détail réservation : </h3>
+                <br />
+                <div class="row">
+                    <div class="col-md-12">
+                       
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="text-right"><i class="fa fa-file-text-o"></i></div>
+                                <h4>Détails sur le Salon :</h4>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-2 ">
+                                        <img alt="salon coiffure bano" src="@Url.Content("~/Areas/Beneficiary/Images/bano-salons-coiffure-salon.jpg")" />
+                                    </div>
+                                    <div class="col-md-9 col-md-offset-1">
+                                        <strong>Nom du salon :</strong> Salon MO'TIFS
+                                        <br /><br />
+                                        <strong>Adresse :</strong> 50 rue Sd quia non numquam  Nice, 83000
+                                        <br /><br />
+                                        <strong>E-mail :</strong> loremIpsum@gmail.com
+                                        <br /><br />
+                                        <strong>Tél. : </strong> +12 34 56 78 90 98
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="text-right"><i class="fa fa-file-text-o"></i></div>
+                                <h4>Détails de réservation :</h4>
+                                <hr />
+                                <div class="component">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Prestation</th>
+                                                <th>Remise (%)</th>
+                                                <th>Tarif (€)</th>
+                                                <th>Date & Heure</th>
+                                                <th >Etat</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Coloration</th>
+                                                <td>10</td>
+                                                <td>60</td>
+                                                <td>22/06/2015 - 14h30</td>
+                                                <td rowspan="2"><strong class="attente">En attente</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Brushing</th>
+                                                <td>20</td>
+                                                <td>40</td>
+                                                <td>22/06/2015 - 15h00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+						<div class="ajouter text-right">
+                             <a href="#suppression" class="btn btn-default text-right ajout popup-with-zoom-anim">Annuler la réservation</a>
+                             <a href="../../Beneficiary/FrontEnd/Historique_Reservation" class="btn btn-default text-right ajout">Retour</a>
+                             <br />
+                        </div>
+                        
+                        <div id="suppression" class="mfp-hide">
+                            <div class="priceing-tabel">
+                                <i class="fa fa-exclamation-circle"></i>
+                                <h5>voulez vous vraiment annuler cette réservation ?</h5>
+                                <a class="price-button" href="../index.html" title="">Oui</a> <a class="price-button" href="" title="">Non</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+@section footer{}
+@section NavBarClient{}
+@section menu{}
+@section scripts{
+    <script type='text/javascript' src="http://maps.googleapis.com/maps/api/js"></script>
+    }

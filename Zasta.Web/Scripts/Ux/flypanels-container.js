@@ -1,0 +1,1 @@
+﻿$(document).ready(function () {$('.flypanels-container').flyPanels({treeMenu: {init: true},});FastClick.attach(document.body);});
