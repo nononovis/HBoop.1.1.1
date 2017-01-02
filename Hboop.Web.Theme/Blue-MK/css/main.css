@@ -127,11 +127,25 @@ hr.small {
 
 /* Map */
 
-.map {
-      height: 100%;
-  
+
+#map-wrapper .map-container{
+     height: 100%;
+     width:98%;
+     padding:0;
+
 }
 
+#map-wrapper .container {
+     padding:0;
+}
+.map {
+      height: 90%; 
+           padding-left:1px; 
+}
+.search-affiliate{
+        height: 10%;  
+        border:solid;
+}
 @media(max-width:768px) {
     .map {
         height: 75%;
