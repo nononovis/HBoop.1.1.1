@@ -5,14 +5,14 @@
       "type": "project",
       "framework": ".NETFramework,Version=v4.6.1",
       "compile": {
-        "bin/Debug/HBoop.Business.Layer.dll": {}
+        "bin/Release/HBoop.Business.Layer.dll": {}
       },
       "runtime": {
         "../packages/Autofac.4.2.1/lib/net45/Autofac.dll": {},
-        "bin/Debug/HBoop.Business.Layer.dll": {}
+        "bin/Release/HBoop.Business.Layer.dll": {}
       },
       "contentFiles": {
-        "bin/Debug/HBoop.Business.Layer.pdb": {
+        "bin/Release/HBoop.Business.Layer.pdb": {
           "buildAction": "None",
           "codeLanguage": "any",
           "copyToOutput": true
@@ -23,7 +23,7 @@
       "type": "project",
       "framework": ".NETFramework,Version=v4.6.1",
       "compile": {
-        "bin/Debug/HBoop.Model.Bson.dll": {}
+        "bin/Release/HBoop.Model.Bson.dll": {}
       },
       "runtime": {
         "../packages/MongoDB.Bson.2.4.0/lib/net45/MongoDB.Bson.dll": {},
@@ -31,10 +31,10 @@
         "../packages/MongoDB.Driver.Core.2.4.0/lib/net45/MongoDB.Driver.Core.dll": {},
         "../packages/System.Runtime.InteropServices.RuntimeInformation.4.0.0/lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll": {},
         "../packages/mongocsharpdriver.2.4.0/lib/net45/MongoDB.Driver.Legacy.dll": {},
-        "bin/Debug/HBoop.Model.Bson.dll": {}
+        "bin/Release/HBoop.Model.Bson.dll": {}
       },
       "contentFiles": {
-        "bin/Debug/HBoop.Model.Bson.pdb": {
+        "bin/Release/HBoop.Model.Bson.pdb": {
           "buildAction": "None",
           "codeLanguage": "any",
           "copyToOutput": true
@@ -45,7 +45,7 @@
       "type": "project",
       "framework": ".NETFramework,Version=v4.6.1",
       "compile": {
-        "bin/Debug/HBoop.DataAccess.Bson.dll": {}
+        "bin/Release/HBoop.DataAccess.Bson.dll": {}
       },
       "runtime": {
         "../packages/MongoDB.Bson.2.4.0/lib/net45/MongoDB.Bson.dll": {},
@@ -54,10 +54,10 @@
         "../packages/Polly.4.3.0/lib/net45/Polly.dll": {},
         "../packages/System.Runtime.InteropServices.RuntimeInformation.4.0.0/lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll": {},
         "../packages/mongocsharpdriver.2.4.0/lib/net45/MongoDB.Driver.Legacy.dll": {},
-        "bin/Debug/HBoop.DataAccess.Bson.dll": {}
+        "bin/Release/HBoop.DataAccess.Bson.dll": {}
       },
       "contentFiles": {
-        "bin/Debug/HBoop.DataAccess.Bson.pdb": {
+        "bin/Release/HBoop.DataAccess.Bson.pdb": {
           "buildAction": "None",
           "codeLanguage": "any",
           "copyToOutput": true

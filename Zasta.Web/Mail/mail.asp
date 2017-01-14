@@ -37,7 +37,7 @@
     
     With objCDOSYSMail	
 				
-				.From = "WebSiteServerContact@smiri.com.tn"
+				.From = "WebSiteServerContact@BSO.com.tn"
 				.To = EmailMembers
 				.Subject = EmailSubject
 				.HTMLBody = EmailContent

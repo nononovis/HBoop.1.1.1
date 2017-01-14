@@ -28,6 +28,7 @@ module.exports = {
             'angular2-universal-polyfills',
             'bootstrap',
             'bootstrap/dist/css/bootstrap.css',
+            'Content/css/main.css',
             'es6-shim',
             'es6-promise',
             'jquery',

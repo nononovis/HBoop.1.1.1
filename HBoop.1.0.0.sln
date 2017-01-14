@@ -71,7 +71,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Hboop.Web.Theme", "Hboop.We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zasta.Web", "Zasta.Web\Zasta.Web.csproj", "{AA7032DF-A6F0-4C1F-9FA1-59A368416F87}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2015", "2015", "{EABC16B6-CD9C-4296-B630-6DD623E1F33A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "V1.0.0", "V1.0.0", "{EABC16B6-CD9C-4296-B630-6DD623E1F33A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

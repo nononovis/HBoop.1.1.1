@@ -9,8 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="Hboop Solution">
 
-    <title>Stylish Portfolio - Start Bootstrap Theme</title>
-
+    <title>hair</title>
+    <link rel="icon" href="./img/rel.png" />
+    <link rel="shortcut icon" href="./img/hair_icon.png" />
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -328,26 +329,18 @@
     <section id="map-section" class="map-section" >
 
             <!-- Sidebar -->
-            <div id="sidebar-wrapper" >
-                <ul class="sidebar-nav">
+            <div id="sidebar-wrapper" >               
+                <h1>Salon Hollywood</h1>
+                <br>
+
+                <ul id="tab_affiliate_ul_id" class="sidebar-nav nav nav-tabs" >
                     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg pull-right toggle"><i class="fa fa-bars"></i></a>                   
-                    <li class="sidebar-brand">
-                        <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+                    
+                    <li  id="tab_affiliate_information_id" class="tab-affiliate">
+                        <a href="#top" onclick=$("#menu-close").click();>Information</a>
                     </li>
-                    <li>
-                        <a href="#top" onclick=$("#menu-close").click();>Home</a>
-                    </li>
-                    <li>
-                        <a href="#about" onclick=$("#menu-close").click();>About</a>
-                    </li>
-                    <li>
-                        <a href="#services" onclick=$("#menu-close").click();>Services</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#map-section" onclick=$("#menu-close").click();>Map</a>
+                    <li class="active tab-affiliate tab-affiliate-right" id="tab_affiliate_avis_id">
+                        <a href="#top" onclick=$("#menu-close").click();>Avis</a>
                     </li>
                 </ul>
             </div>
@@ -364,21 +357,41 @@
                                 </iframe>
                             </section> 
                     <section class="row search-affiliate">
-                        <form class="form-inline">
-                            <div class="form-group col-sm-3">
-                                <input id="citytbx" type="text" class="form-control" >
+                        <form class="form-inline form-search">
+                            <div class="input-group col-sm-3">
+                                <input id="citytbx" type="text" class="form-control" placeholder="Lieu ou adresse..." >
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-search"></span></button>
+                                </span>                                  
                             </div>
-                            <div class="form-group col-sm-2">
-                                <label for="citytbx1">Ville</label>
-                                <input id="citytbx1" type="text" class="form-control">
+                            <div class="input-group col-sm-3" >
+                                <select class="form-control" id="slProduct" >
+                                    <option>Produit</option>
+                                    <option>Coiffure</option>
+                                    <option>Coiffure</option>
+                                    <option>Coiffure</option>
+                                    <option>Coiffure</option>
+                                </select>                       
                             </div>
-                            <div class="form-group col-sm-3">
-                                <label for="citytbx2">Ville</label>
-                                <input id="citytbx2" type="text" class="form-control">
+                      
+                            <div class="input-group col-sm-3">
+                                <select class="form-control" id="slProduct">
+                                    <option>Catégorie</option>
+                                    <option>Coiffure</option>
+                                    <option>Coiffure</option>
+                                    <option>Coiffure</option>
+                                    <option>Coiffure</option>
+                                </select>
                             </div>
-                            <div class="form-group col-sm-4">
-                                <label for="citytbx3">Ville</label>
-                                <input id="citytbx3" type="text" class="form-control">
+
+                            <div class="input-group col-sm-2">
+                                <select class="form-control" id="slProduct">
+                                    <option>Coiffure</option>
+                                    <option>Coiffure</option>
+                                    <option>Coiffure</option>
+                                    <option>Coiffure</option>
+                                    <option>Coiffure</option>
+                                </select>
                             </div>
                         </form>
                     </section>                                 

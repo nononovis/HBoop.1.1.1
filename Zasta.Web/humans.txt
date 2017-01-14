@@ -1,40 +1,40 @@
 /* TEAM */
-	SED Web Designer Director : Mlle. Nouha SMIRI
-	Email: s.nouha@smiri.com.tn
-	Web: Sedesign.smiri.com.tn
+	SED Web Designer Director : Mlle. Nouha BSO
+	Email: s.nouha@BSO.com.tn
+	Web: Sedesign.BSO.com.tn
 	From: Tunis, Tunisia
 
 	PRAXIS Front-End Director: Mlle. Mariem TEBAI
-	Email: t.mariem@smiri.com.tn
-	Web: praxis.smiri.com.tn
+	Email: t.mariem@BSO.com.tn
+	Web: praxis.BSO.com.tn
 	From: Tunis, Tunisia
 
 	PRAXIS Developper Director: Mr. Ahmed Hammemi
-	Email: developer.SE@smiri.com.tn  
-	Web: praxis.smiri.com.tn
+	Email: developer.SE@BSO.com.tn  
+	Web: praxis.BSO.com.tn
 	From: Tunis, Tunisia
 
 	SE Business Developpment Manager: Mlle. Mariem Jemail
-	Email:  commercial@smiri.com.tn  
-	Web: www.smiri.com.tn
+	Email:  commercial@BSO.com.tn  
+	Web: www.BSO.com.tn
 	From: Tunis, Tunisia
 
 	SE Office Manager: Mlle. Hela Hizaoui
-	Email: h.hela@smiri.com.tn
-	Web: www.smiri.com.tn
+	Email: h.hela@BSO.com.tn
+	Web: www.BSO.com.tn
 	From: Tunis, Tunisia
 
 /* THANKS */
-	SMIRI ENGINEERING Associate Executive Director: Mme. Souhir SMIRI
-	SMIRI ENGINEERING Associate Owner: Mr. Wissem SMIRI
+	BSO ENGINEERING Associate Executive Director: Mme. Souhir BSO
+	BSO ENGINEERING Associate Owner: Mr. Wissem BSO
 	Création site web dynamique et statique, logo entreprise, idendité visuelle, Software sur mesure, hébérgement, etude, audit et conseils
-	Email: contact@smiri.com.tn
+	Email: contact@BSO.com.tn
 	Tel: +216 70 690 776
 	Fax: +216 70 690 775
 	Mobile1: +216 99 712 900
 	Mobile2: +216 29 219 900
-	Web: www.smiri.com.tn
-	Web: www.smiriengineering.com
+	Web: www.BSO.com.tn
+	Web: www.BSOengineering.com
 	From: Tunis, Tunisia
                             
                                           
