@@ -1,16 +1,19 @@
 ﻿@{
     Layout = null;
 }
-
- <!--nav-->
-                        <!--Menu Mobile-->
-	                    <div class="flypanels-container preload">
+                        <!--nav-->
+                        <!--Menu Web-->
+	                    <div class="flypanels-container preload" ng-controller="productCtrl">
                             <div class="offcanvas flypanels-left">
 			                    <div class="panelcontent" data-panel="treemenu">
-				                    <nav class="flypanels-treemenu" role="navigation">
-					                    <ul data-ajax="false">
+				                    <nav class="flypanels-treemenu" role="navigation" >
+					                    
+                                        <ul data-ajax="false">   
+                                            <li><a href="#" title="Brushing">{{menu.name}}<span>xxxxx</span></a></li>                                   
 						                    <li class="haschildren"><div><a href="#" class="link">Coiffure</a> <a href="#" class="expand"><i class="fa icon"></i></a></div>
-							                    <ul>
+							                  
+                                              <ul>
+                                                  <li><a href="#" title="Brushing">{{menu.name}}<span>(02)</span></a></li>
 								                    <li><div><a href="#" class="link">Brushing (02)</a></div></li>
 								                    <li><div><a href="#" class="link">Coupe (12)</a></div></li>
 								                    <li><div><a href="#" class="link">Soin des mains + pose vernis (10)</a></div></li>
@@ -30,6 +33,7 @@
 						                    </li>
 						
 					                    </ul>
+
 				                    </nav>
 			                    </div>
                              </div>
@@ -43,7 +47,7 @@
                         <!--Menu Mobile-->
                         <nav class="ma5-menu-mobile">
                                 <ul class="ma5-ul" data-ajax="false">
-
+                                  
                                     <li class="ma5-li-1"> <a class="ma5-path-to-active" href="#" title="Coiffure">Coiffure</a><span class="ma5-btn-enter"><i class="fa fa-chevron-right"></i></span>
                                         <ul class="ma5-ul-1">
                                             <li class="ma5-li-1-1">
@@ -74,3 +78,5 @@
                                 </ul>
                             </nav>
                         <!--nav-->
+
+@Scripts.Render("~/ng/menu");

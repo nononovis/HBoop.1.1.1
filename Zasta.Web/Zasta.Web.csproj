@@ -333,6 +333,7 @@
     <Content Include="Scripts\App\app.js" />
     <Content Include="Scripts\App\contact.js" />
     <Content Include="Scripts\App\map.js" />
+    <Content Include="Scripts\App\MenuNg\productCtrl.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Beneficiary\Views\web.config" />

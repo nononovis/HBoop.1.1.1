@@ -135,6 +135,17 @@ namespace Zasta.Web
                         "~/Areas/Beneficiary/Scripts/Ux/rlaccordion.js",
                         "~/Areas/Beneficiary/Scripts/paiement.js"
                       ));
+
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+                                           "~/Scripts/angular.min.js",
+                                           "~/Scripts/angular-resource.min.js",
+                                           "~/Scripts/angular-animate.min.js",
+                                            "~/Scripts/angular-route.min.js",                                           
+                                           "~/Scripts/angular-resource.js"));
+
+            bundles.Add(new ScriptBundle("~/ng/menu").Include(
+                                   "~/Scripts/MenuNg/productCtrl.js"));
+
             BundleTable.EnableOptimizations = false;
         }
     }

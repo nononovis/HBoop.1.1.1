@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="zasta-app">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -228,8 +228,9 @@
        }
     
     @Scripts.Render("~/bundles/jquery")
+
     @Scripts.Render("~/bundles/bootstrap")
-  
+ 
     @RenderSection("scripts", false)
     @if (!IsSectionDefined("map") && !IsSectionDefined("param"))
        { 
